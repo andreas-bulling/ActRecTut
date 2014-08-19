@@ -10,14 +10,14 @@ DOI: [http://dx.doi.org/10.1145/2499621](http://dx.doi.org/10.1145/2499621)
 **If you find the toolbox useful for your research please cite the above paper, thanks!**
 
 # HOWTO
-Version 1.3, 15 January 2014
+Version 1.4, 19 August 2014
 
 ## General Notes
 
 - The data should be arranged in a MATLAB matrix with rows denoting the frames (samples) and columns
   denoting the different sensors or axes -> matrix NxM (N: frames, M: sensors/axes)
   IMPORTANT: make sure the matrix does not contain any timestamp columns as often added by data recording
-  toolboxes, such as the Context Recognition Network Toolbox (CRNT)
+  toolboxes, such as the [Context Recognition Network Toolbox](http://crnt.sourceforge.net/CRN_Toolbox/Home.html)
 
 - The ground truth labels should be integers, arranged in a MATLAB vector with rows denoting the frames
   -> vector Nx1 (N: frames)
@@ -31,7 +31,7 @@ Version 1.3, 15 January 2014
   have a look at `setClassifier.m`
 
 - This toolbox requires the following MATLAB toolboxes:
-  - Statistics
+  - [Statistics](http://www.mathworks.de/products/statistics/)
 
 - To compile the different third-party libraries have a look at the documentation
 
@@ -110,7 +110,7 @@ Execute `run_experiments_paper.m` in MATLAB
 * SVMlight  
   URL: [http://svmlight.joachims.org/](http://svmlight.joachims.org/)
 
-* jointboosting by Christian Wojek
+* jointboosting by Christian Wojek  
   URL: none
 
 * HMM Toolbox for MATLAB by Kevin Murphy  
