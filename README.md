@@ -30,6 +30,9 @@ Version 1.3, 15 January 2014
 - If you want to modify the default parameters of the different classifiers
   have a look at `setClassifier.m`
 
+- This toolbox requires the following MATLAB toolboxes:
+  - Statistics
+
 - To compile the different third-party libraries have a look at the documentation
 
 ## How to reproduce the results from the paper
