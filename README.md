@@ -2,17 +2,17 @@
 
 MATLAB toolbox for the publication
 
-**A Tutorial on Human Activity Recognition Using Body-worn Inertial Sensors**
-Andreas Bulling, Ulf Blanke and Bernt Schiele
-ACM Computing Surveys 46, 3, Article 33 (January 2014), 33 pages
+**A Tutorial on Human Activity Recognition Using Body-worn Inertial Sensors**  
+Andreas Bulling, Ulf Blanke and Bernt Schiele  
+ACM Computing Surveys 46, 3, Article 33 (January 2014), 33 pages  
 DOI: [http://dx.doi.org/10.1145/2499621](http://dx.doi.org/10.1145/2499621)
 
 **If you find the toolbox useful for your research please cite the above paper, thanks!**
 
-#HOWTO use the MATLAB activity recognition toolbox
+# HOWTO
 Version 1.3, 15 January 2014
 
-##General Notes
+## General Notes
 
 - The data should be arranged in a MATLAB matrix with rows denoting the frames (samples) and columns
   denoting the different sensors or axes -> matrix NxM (N: frames, M: sensors/axes)
@@ -34,20 +34,20 @@ Version 1.3, 15 January 2014
 
 ## How to reproduce the results from the paper
 
-Execute run_experiments_paper.m in MATLAB
+Execute `run_experiments_paper.m` in MATLAB
 
 ## Specific notes on how to create and run your own experiment
 
-1. Have a look at settings.m
+1. Have a look at `settings.m`
    This file contains all settings available in the toolbox and their defaults. All settings are
    stored in a MATLAB struct `SETTINGS`. Set the different fields in this struct
    according to the requirements of your planned experiment.
 
 2. Have a look at `Experiments/expTutorial.m` and run the script
    This file contains a (simple) example structure of an experiment. Note how `settings.m` is
-   executed first, followed by modifications to the SETTINGS fields.
+   executed first, followed by modifications to the `SETTINGS` fields.
 
-   optional) Install all third-party libraries you plan to use (see list below).
+   optional: Install all third-party libraries you plan to use (see list below).
    Archives of all supported libraries are provided in the subdirectory "Libraries".
    The libraries should be installed in the same directory. If you prefer to install the libraries
    in a different path, adapt the library paths in `settings.m` accordingly (line 33 and following)
@@ -89,29 +89,29 @@ Execute run_experiments_paper.m in MATLAB
         subject1_walk, subject1_gesture, subject2_walk, subject2_gesture
         The data files should be called "data.mat" and should contain both variables `data` and `labels`
 
-  5. Run expOwn.m and wait for the script to finish.
+  5. Run `expOwn.m` and wait for the script to finish.
         Extracted features will be saved in "Output/features" whereas the experiment output will be saved
         in "Output/experiments/EXPERIMENT_NAME/IDENTIFIER_NAME"
 
 ## Optional third-party libraries
 
-* libSVM
+* libSVM  
   URL: [http://www.csie.ntu.edu.tw/~cjlin/libsvm/](http://www.csie.ntu.edu.tw/~cjlin/libsvm/)
 
-* liblinear
+* liblinear  
   URL: [http://www.csie.ntu.edu.tw/~cjlin/liblinear/](http://www.csie.ntu.edu.tw/~cjlin/liblinear/)
 
-* mRMR
+* mRMR  
   URL: [http://penglab.janelia.org/proj/mRMR/](http://penglab.janelia.org/proj/mRMR/)
 
-* SVMlight
+* SVMlight  
   URL: [http://svmlight.joachims.org/](http://svmlight.joachims.org/)
 
 * jointboosting by Christian Wojek
   URL: none
 
-* HMM Toolbox for MATLAB by Kevin Murphy
+* HMM Toolbox for MATLAB by Kevin Murphy  
   URL: [http://www.cs.ubc.ca/~murphyk/Software/HMM/hmm.html](http://www.cs.ubc.ca/~murphyk/Software/HMM/hmm.html)
 
-* Performance evaluation scripts by Jamie Ward
+* Performance evaluation scripts by Jamie Ward  
   URL: [http://www.jamieward.net/research/performance/](http://www.jamieward.net/research/performance/)
