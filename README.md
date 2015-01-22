@@ -7,6 +7,23 @@ Andreas Bulling, Ulf Blanke and Bernt Schiele
 ACM Computing Surveys 46, 3, Article 33 (January 2014), 33 pages  
 DOI: [http://dx.doi.org/10.1145/2499621](http://dx.doi.org/10.1145/2499621)
 
+```Latex
+@article{bulling14_csur,
+    title = {A Tutorial on Human Activity Recognition Using Body-worn Inertial Sensors},
+    author = {Andreas Bulling and Ulf Blanke and Bernt Schiele},
+    url = {https://github.com/andyknownasabu/ActRecTut},
+    issn = {0360-0300},
+    doi = {10.1145/2499621},
+    year = {2014},
+    journal = {ACM Computing Surveys},
+    volume = {46},
+    number = {3},
+    pages = {33:1-33:33},
+    abstract = {The last 20 years have seen an ever increasing research activity in the field of human activity recognition. With activity recognition having considerably matured so did the number of challenges in designing, implementing and evaluating activity recognition systems. This tutorial aims to provide a comprehensive hands-on introduction for newcomers to the field of human activity recognition. It specifically focuses on activity recognition using on-body inertial sensors. We first discuss the key research challenges that human activity recognition shares with general pattern recognition and identify those challenges that are specific to human activity recognition. We then describe the concept of an activity recognition chain (ARC) as a general-purpose framework for designing and evaluating activity recognition systems. We detail each component of the framework, provide references to related research and introduce the best practise methods developed by the activity recognition research community. We conclude with the educational example problem of recognising different hand gestures from inertial sensors attached to the upper and lower arm. We illustrate how each component of this framework can be implemented for this specific activity recognition problem and demonstrate how different implementations compare and how they impact overall recognition performance.},
+    keywords = {}
+}
+```
+
 **If you find the toolbox useful for your research please cite the above paper, thanks!**
 
 # HOWTO
