@@ -1,4 +1,8 @@
-#A Tutorial on Human Activity Recognition Using Body-worn Inertial Sensors
+> [!WARNING]
+> This repository has been migrated to Codeberg and will not be updated anymore.
+> Find the new repository here: https://codeberg.org/andreas-bulling/ActRecTut
+
+# A Tutorial on Human Activity Recognition Using Body-worn Inertial Sensors
 
 MATLAB toolbox for the publication
 
