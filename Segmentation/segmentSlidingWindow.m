@@ -21,11 +21,13 @@
 function segments = segmentSlidingWindow(data, wSize, sSize)
     len = size(data,1);
     wCurr = 1;
-    segments = []; % todo: init to make faster
+    segments = zeros(ceil((len-wSize)/sSize),2); % improved performance
+    i = 1;
     while (wCurr<len-wSize)
-        segments = [segments; wCurr wCurr+wSize]; % start stop
+        segments(i,:) = [wCurr, wCurr+wSize]; % start, stop
         wCurr = wCurr+sSize; % step forward
+        i = i + 1;
     end
-    segments = [segments; wCurr len]; % add residual
+    segments(end,:) = [wCurr len]; % add residual
 end
 
